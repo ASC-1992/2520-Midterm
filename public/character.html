@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D&D Public Forum - Character Creator</title>
+        <style>
+            .body {
+                margin: 0;
+                padding: 10px;
+                min-height: 95vh;
+                background-image: url("/pictures/art/bg1.jpg");
+                background-size:contain;
+                background-repeat: no-repeat;
+            }
+            
+            .global {
+                margin: 0;
+                padding: 10px;
+                min-height: 95vh;
+                background-image: url("/pictures/art/bg1.jpg");
+                background-size:cover;
+                
+            }
+            
+            #logo {
+                height: 50px;
+                width: auto;
+                cursor: pointer;
+            }
+            
+            #raceDesc {
+                margin: 5px;
+                height: 25vh;
+                width: 25vh;
+                background-color: rgba(255,255,255,0.5)
+            }
+            #classDesc {
+                margin: 5px;    
+                height: 25vh;
+                width: 25vh;
+                background-color: rgba(255,255,255,0.5)
+            }
+            #menu {
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 5%;
+                width: 5%;
+                border-radius: 5%;
+                cursor: pointer;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="global">
+            <img id="logo" src="/pictures/Logo2.png">
+            <h1 style="font-family:roboto; color:red;">Character Creator</h1>
+            <p style="color:red;">Name: </p>
+            <input type="text" id="name" />
+            <br>
+            <p style="color:red;">Race: </p>
+            <select id="race">
+                <option value="Dwarf">Dwarf</option>
+                <option value="Elf">Elf</option>
+                <option value="Halfling">Halfling</option>
+                <option value="Human">Human</option>
+                <option value="Dragonborn">Dragonborn</option>
+                <option value="Gnome">Gnome</option>
+                <option value="Half-Elf">Half-Elf</option>
+                <option value="Half-Orc">Half-Orc</option>
+                <option value="Tiefling">Tiefling</option>
+            </select>
+            <br>
+            <p style="color:red;">Class: </p>
+            <select id="class">
+                <option value="Barbarian">Barbarian</option>
+                <option value="Bard">Bard</option>
+                <option value="Cleric">Cleric</option>
+                <option value="Druid">Druid</option>
+                <option value="Fighter">Fighter</option>
+                <option value="Monk">Monk</option>
+                <option value="Paladin">Paladin</option>
+                <option value="Ranger">Ranger</option>
+                <option value="Rogue">Rogue</option>
+                <option value="Sorcerer">Sorcerer</option>
+                <option value="Warlock">Warlock</option>
+                <option value="Wizard">Wizard</option>
+            </select>
+            <button id="save">Save</button>
+            <br>
+            <button id="menu">Back to Main Menu</button>
+            <div id="display">
+               <p style="color:red;">Race Description </p>
+                <div id="raceDesc">Select a Race to Learn More!</div>
+                <p style="color:red;">Class Description </p>
+                <div id="classDesc">Select a Class to Learn More!</div>
+            </div>
+        </div>
+    </body>
+   
+    <script src="/scripts/characterbundle.js"></script>
+</html>

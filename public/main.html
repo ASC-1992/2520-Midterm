@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D&D Public Forum - Main</title>
+        <style>
+            #logo {
+                height: 50px;
+                width: auto;
+                cursor: pointer;
+            }
+            
+            @keyframes backgroundScroll {
+                0% { background-position: 50% 50%; }
+                33% { background-position: 1% 50%; }
+                40% { background-position: 1% 50%; }
+                66% { background-position: 99% 50%; }
+                75% { background-position: 99% 50%; }
+                100% { background-position: 50% 50%; }
+            }
+                /* added pauses to each edge of the image */
+
+            #background {
+                margin: 0;
+                height: 100vh;
+                width: auto;
+                background: url("/pictures/background.jpg") no-repeat;
+                background-position: 50% 50%;
+                animation: backgroundScroll 60s ease-in-out 1s infinite; 
+            }
+            
+            .but{
+                margin: auto;
+                height: 14vh;
+                width: 7vw;
+                border-radius: 100%;
+                cursor: pointer;
+                background: rgba(255,0,0,0.65);
+                text-align: center;
+                vertical-align: middle;
+                line-height: 14vh;
+                display: inline-block;
+
+            }
+            
+            .but:hover {
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                transition: ease-out 0.5s;
+            }
+            
+            #topic {
+                position: absolute;
+                left: -20%;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+            
+            #editProfile {
+                position: absolute;
+                left: 0;
+                right: -20%;
+                top: 0;
+                bottom: 0;   
+            }
+            
+
+        </style>
+    </head>
+    
+    <body id="background">
+        <img id="logo" src="/pictures/Logo2.png">
+        <h1 style="font-family:roboto;">Remedial Dungeons and Dragons</h1>
+        <div class="but" id="topic">Create a Topic</div>
+        <div class="but" id="editProfile">Edit Your Character</div>
+           
+            
+        <script src="/scripts/indexbundle.js"></script>
+    </body>
+</html>

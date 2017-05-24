@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D&D Public Forum - Room</title>
+        <style>
+            #body {
+                margin: 0;
+            }
+            #status {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(255,255,255,0.8);
+                color: rgba(0,0,0,0.8);
+            }
+            #logo {
+                height: 50px;
+                width: auto;
+                cursor: pointer;
+            }
+            .msg {
+                text-align: center;
+                display: inline;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            
+            .chat {
+                display: block;
+                margin: 5px;
+                padding: 10px;
+                height: 8vh;
+                width: 98%;
+                border: 2px solid black;
+                background-color: darkslategray;
+                color: #F4F0F1;
+                
+            }
+            
+            .avatar {
+                vertical-align: middle;
+                height: 70px;
+                width: 70px;
+                border: 2px solid black;
+                float: left;
+                
+            }
+            
+            .name {
+                font-weight: bold;
+                font-size: xx-large;
+                display: inline;
+                margin-left: 5px;
+                margin-right: 5px;              
+            }
+            
+            .race {
+                font-style: italic; 
+                font-size: large;
+                display: inline;
+                margin-left: 5px;
+                margin-right: 5px;
+                
+            }
+            
+      
+
+            
+        </style>
+    </head>
+    
+    <body>
+        <img id="logo" src="/pictures/Logo2.png">
+        <br>
+        <input type="text" id="msg" />
+        <button id="send">Send</button>
+        <button id="back">Back to Topics</button>
+        <div id="display"></div>
+        <div id="status"></div>
+    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/roombundle.js"></script>
+</html>

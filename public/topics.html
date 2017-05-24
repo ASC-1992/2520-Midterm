@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D&D Public Forum - Topics</title>
+        <style>
+            #logo {
+                height: 50px;
+                width: auto;
+                cursor: pointer;
+            }
+            
+            .room {
+                margin: 5px;
+                padding: 5px;
+                height: 9vh;
+                width: 98%;
+                border: 2px solid black;
+                border-radius: 5px;
+                background-color: darkslategray;
+                color: #F4F0F1;
+                cursor: pointer;
+            }
+            
+            .roomPic {
+                vertical-align: middle;
+                height: 70px;
+                width: 70px;
+                border: 2px solid black;
+                display: inline-grid;
+                float: left;                
+            }
+            
+            .roomName {
+                vertical-align: top;
+                font-weight: bold;
+                font-size: xx-large;
+                display: inline;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            
+            .roomDesc {
+                position: relative;
+                font-style: italic; 
+                font-size: large;
+                display: inline;
+                margin-left: 5px;
+                margin-right: 5px;                
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <img id="logo" src="/pictures/Logo2.png">
+        <h1 style="font-family:roboto;">Remedial Dungeons and Dragons - Forum</h1>
+        <input type="text" placeholder="Topic Title" id="room" />
+        <input type="text" placeholder="Topic Description" id="desc" />
+        <select id="topic">
+            <option value="/pictures/general.png">General</option>
+            <option value="/pictures/question.jpg">Questions</option>
+            <option value="/pictures/exmark.jpg">Help</option>
+            <option value="/pictures/offtopic.png">Off Topic</option>
+        </select>
+        
+        <button id="create">Create Your Room</button>
+        
+        <div id="allRooms"></div>
+        <script src="/scripts/topicbundle.js"></script>
+    </body>
+</html>
